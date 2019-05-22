@@ -13,9 +13,11 @@ categories = ["network-programming", "cryptography"]
 [dependencies]
 base64 = "0.10"
 log = { version = "0.4.0", optional = true }
-ring = "0.14"
+# ring = "0.14"
+ring = { git = "https://github.com/briansmith/ring" }
 sct = "0.5"
-untrusted = "0.6.2"
+# untrusted = "0.6.2"
+untrusted = { git = "https://github.com/briansmith/untrusted", tag = "ring-master"  }
 # webpki = "0.19"
 webpki = { git = "https://github.com/alex179ohm/webpki", branch = "master" }
 
