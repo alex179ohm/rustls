@@ -16,7 +16,8 @@ log = { version = "0.4.0", optional = true }
 ring = "0.14"
 sct = "0.5"
 untrusted = "0.6.2"
-webpki = "0.19"
+# webpki = "0.19"
+webpki = { git = "https://github.com/alex179ohm/webpki", branch = "master" }
 
 [features]
 default = ["logging"]
